@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@open-wa/wa-automate": "^4.72.1",
+    "tsx": "^4.16.2"
+  }
+}
