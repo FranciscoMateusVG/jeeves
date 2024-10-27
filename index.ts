@@ -16,9 +16,20 @@ create({
 function start(client: Client) {
   console.log('Client started')
   client.onMessage(async (message) => {
-    console.log(message)
-    if (message.body === 'Ola') {
-      await client.sendText(message.from, '👋 Holla que tal?')
+    if (message.body) {
+      client.sendText(message.from, message.body).catch((err) => {
+        console.log(err)
+      })
+
+      // client.getAllContacts().then((contacts) => {
+      //   contacts.forEach((contact) => {
+      //     if (contact.id === '553171511181@c.us') {
+      //       client.sendText(contact.id, message.body).catch((err) => {
+      //         console.log(err)
+      //       })
+      //     }
+      //   })
+      // })
     }
   })
 }

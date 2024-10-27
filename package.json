@@ -1,12 +1,12 @@
 {
   "scripts": {
-    "start": "tsx index.ts"
+    "start": "tsx watch index.ts"
   },
   "devDependencies": {
     "typescript": "^5.5.3"
   },
   "dependencies": {
-    "@open-wa/wa-automate": "^4.72.1",
+    "@open-wa/wa-automate": "^4.74.0",
     "tsx": "^4.16.2"
   }
 }
